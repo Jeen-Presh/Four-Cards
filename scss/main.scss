@@ -1,0 +1,95 @@
+@import 'variable';
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Core styling
+body {
+    font-family: $ff;
+    line-height: 1.4;
+    min-height: 100vh;
+    background:$clr-neutral-lg;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+}
+
+p {
+    margin-bottom: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    border-radius: .3rem;
+    padding: 1rem 3rem;
+    box-shadow:0 1rem 2rem .5rem #dedede;
+}
+
+header {
+    text-align: center;
+}
+
+
+// Utility Classes
+.fw-200 {font-weight: $fw-200;}
+.text-align{text-align: center;}
+.margin-bottom{margin-bottom: 1rem;}
+
+.description-main-text{
+    opacity: 0.4;
+    font-size: .95rem;
+}
+
+.description-text {
+    opacity: 0.4;
+    font-size: .75rem;
+    line-height: 1.8;
+}
+
+
+.bg-light{
+    background: $clr-neutral-lg;
+}
+
+.content {
+    display: grid;
+    grid-gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.lead-text{
+    font-size: 1.5rem;
+}
+
+.border-clr1 {
+    border-top: 3px solid $clr-primary-cyan;
+}
+.border-clr2 {
+    border-top: 3px solid $clr-primary-red;
+}
+.border-clr3 {
+    border-top: 3px solid $clr-primary-orange;
+}
+.border-clr4 {
+    border-top: 3px solid $clr-primary-blue;
+}
+
+.image{
+    display: flex;
+    justify-content: right;
+}
+
+
+@import 'media';
